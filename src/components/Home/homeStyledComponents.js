@@ -7,6 +7,8 @@ import {MdBusinessCenter} from 'react-icons/md'
 import {IoRestaurantSharp} from 'react-icons/io5'
 import {MdTravelExplore} from 'react-icons/md'
 import {FaCcVisa} from 'react-icons/fa'
+import {BiInfoCircle} from 'react-icons/bi'
+import {AiOutlinePlusCircle} from 'react-icons/ai'
 import {FaGraduationCap,FaRegNewspaper} from 'react-icons/fa'
 import {FaBookOpen} from 'react-icons/fa'
 import {BsShop} from 'react-icons/bs'
@@ -28,6 +30,7 @@ import {MdAddHomeWork} from 'react-icons/md'
 import {BiCameraMovie} from 'react-icons/bi'
 import {BsBank} from 'react-icons/bs'
 import {MdNightlife} from 'react-icons/md'
+import {FiArrowUpRight} from 'react-icons/fi'
 import {TbMovie} from 'react-icons/tb'
 import {TbStethoscope} from 'react-icons/tb'
 import {MdBookOnline} from 'react-icons/md'
@@ -46,7 +49,9 @@ import {AiTwotoneInsurance} from 'react-icons/ai'
 import {MdOutlineAccountBox} from 'react-icons/md'
 export const HeaderContainer = styled.div`
 border-color:blue;
-min-height:100px;
+height:100px;
+position:fixed ;
+background-color:white;
 display:flex;
 justify-content:space-between;
 align-items:center;`
@@ -67,15 +72,20 @@ display:flex;`
 
 export const LeftContainer = styled.div`
 min-height:100vh;
+margin-top:100px;
+
 background-color:rgb(13, 15, 124);
 width:370px;`
 export const RightContainer = styled.div`
 min-height:100vh;
-background-color: #edf5f3 ;
+margin-top:100px;
+
+background-color: white ;
 width:370px;`
 
 export const MiddleContainer = styled.div`
 min-height:100vh;
+margin-top:100px;
 background-color:white;
 width:100%;
 `
@@ -89,6 +99,7 @@ max-width:300px;
 `
 export const SearchContainer = styled.div`
   display: flex;
+  width:900px;
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -185,6 +196,43 @@ color:#006699;
 font-size:20px;
 margin-left:10px;
 margin-right:10px;`
+
+export const InfoIcon1 = styled(BiInfoCircle)`
+color:#006699;
+font-size:25px;
+margin-left:10px;
+margin-right:10px;`
+
+export const InfoIcon2 = styled(BiInfoCircle)`
+color:#339933;
+font-size:25px;
+margin-left:10px;
+margin-right:10px;`
+
+export const InfoIcon3 = styled(BiInfoCircle)`
+color: rgb(255, 153, 0);
+font-size:25px;
+margin-left:10px;
+margin-right:10px;`
+
+export const PlusIcon1 = styled(AiOutlinePlusCircle)`
+color:#006699;
+font-size:25px;
+margin-left:10px;
+margin-right:10px;`
+
+export const PlusIcon2 = styled(AiOutlinePlusCircle)`
+color:#339933;
+font-size:25px;
+margin-left:10px;
+margin-right:10px;`
+
+export const PlusIcon3 = styled(AiOutlinePlusCircle)`
+color:rgb(255, 153, 0);
+font-size:25px;
+margin-left:10px;
+margin-right:10px;`
+
 
 export const BusinessIcon4 = styled(MdBusinessCenter)`
 color:#006699;
@@ -413,6 +461,10 @@ font-size:20px;
 margin-left:10px;
 margin-right:10px;
 `
+export const LinkIcon = styled(FiArrowUpRight)`
+color:white;
+font-size:20px;
+`
 
 export const ElectricityIcon = styled(MdElectricBolt)`
 color:#00FFFF;
@@ -555,4 +607,29 @@ margin-right:10px;
 export const ADIMGC = styled.div`
 display:flex;
 flex-direction:row;
-justify-content:flex-end`
+justify-content:flex-end;`
+
+export const TrendingTitle = styled.h2`
+color:white;
+margin:10px;
+margin-top:45px;
+text-decoration:underline;
+`
+export const TrendingDes = styled.p`
+color:white;
+margin:5px;
+margin-top:20px;
+margin-left:10px;`
+
+export const InfoAdd = styled.div`
+display:flex;
+align-self:flex-end;
+margin-left:auto;
+width:90px;
+justify-content:center;
+align-items:center;
+height:100%;`
+
+export const LogoTitle = styled.h1`
+margin-left:30px;
+margin-right:30px;`
